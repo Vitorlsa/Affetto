@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/Vitorlsa/Affetto#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "next": "^10.0.5",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-image-gallery": "^1.0.8",
+    "styled-jsx": "^3.4.1"
   }
 }
