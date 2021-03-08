@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link'
 import {useRouter} from 'next/router'
+import styles from '../styles/components/Navbar.module.css'
 
 const Navbar = () => {
     
@@ -26,10 +27,10 @@ const Navbar = () => {
     return (
         <div>
             <nav>
-                <div className="nav-wrapper #ffcdd2 red lighten-4">
-                    <Link href="/"><a href="#" className="brand-logo">Logo</a></Link>
+                <div className="nav-wrapper #212121 grey darken-4">
+                    <Link href="/"><a href="#" className={styles.brandLogo}>Logo</a></Link>
                     {/*<a href="#" data-target="mobile-demo" className="sidenav-trigger"><i class="material-icons">menu</i></a>*/}
-                    <ul id="nav-mobile" className="right hide-on-med-and-down">
+                    <ul id="nav-mobile" className="right hide-on-med-and-down" style={{padding: '0 1rem'}}>
                         <li className={isActive("/")}><Link href="/"><a>Home</a></Link></li>
                         <li className={isActive("/assessorias")}><Link href="/assessorias"><a>Tipos de Assessoria</a></Link></li>
                         <li className={isActive("/galeria")}><Link href="/galeria"><a>Galeria</a></Link></li>

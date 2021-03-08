@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ImageGallery from 'react-image-gallery'
+import styles from '../styles/pages/Index.module.css'
 
 const HomePage = () => {
 
@@ -20,8 +21,8 @@ const HomePage = () => {
     ];
 
     return (
-        <div>
-            <ImageGallery items={images} showFullscreenButton={false} autoPlay showPlayButton={false} />
+        <div className={styles.carouselContainer}>
+            <ImageGallery items={images} showFullscreenButton={false} autoPlay showPlayButton={false} showBullets={true} slideInterval="5000" thumbnailPosition="bottom" showPlayButton={true} />
         </div>
     );
 }

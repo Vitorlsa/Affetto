@@ -1,0 +1,38 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.image-gallery {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.image-gallery-slide .image-gallery-image {
+    width: auto;
+    height: 30rem;
+}
+
+.image-gallery-icon:focus {
+    background-color: transparent;
+}
+
+nav ul li.active {
+  background-color: #ffcc80;
+}
+
+nav ul li:hover {
+    background-color: #ffe0b2;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.page-footer {
+   background-color: #212121; 
+}

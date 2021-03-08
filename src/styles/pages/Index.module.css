@@ -1,0 +1,7 @@
+.carouselContainer {
+    height: 40rem;
+    margin: auto;
+    background-color: #ffe0b2;
+    display: flex;
+    align-items: center;
+}
